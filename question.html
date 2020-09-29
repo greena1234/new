@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+	<div class="quiz-wrapper">
+		{% for question in questions %}
+	       <h3>{{question}}</h3>
+	       <br/>
+	    <input type="radio" value={{question.answer.choice_text1}} id="Fastlearning" name="question1">
+	       <label for="Fastlearning">1.{{question.answer.choice_text1}}</label><br/>
+	    <input type="radio"  name="question1">
+	       <label>2.{{question.answer.choice_text2}}</label><br/>
+	    <input type="radio" name="question1">
+	       <label>3.{{question.answer.choice_text3}}</label> <br/>
+	    {% endfor %}
+
+	   <br/> 
+ 	</div>
+ 	<input type="submit"  value="Submit" onClick="alert('Hello I am alert')">
+ 		<!-- <div class="quiz-wrapper">
+	  <h3>1. What is the output of the below c code?</h3>
+	<br/>
+	    <input type="radio" id="Fastlearning" name="question2">
+	       <label for="Fastlearning">1. Fastlearning</label><br/>
+	    <input type="radio"  name="question2">
+	       <label>2. learning</label><br/>
+	    <input type="radio" name="question2">
+	       <label>3. learningFast</label> <br/>
+	    <input type="radio" name="question1">
+	     <label>4. Fast</label> 
+ 	</div>
+ 		<div class="quiz-wrapper">
+	  <h3>1. What is the output of the below c code?</h3>
+	<br/>
+	    <input type="radio" id="Fastlearning" name="question3">
+	       <label for="Fastlearning">1. Fastlearning</label><br/>
+	    <input type="radio"  name="question3">
+	       <label>2. learning</label><br/>
+	    <input type="radio" name="question3">
+	       <label>3. learningFast</label> <br/>
+	    <input type="radio" name="question1">
+	     <label>4. Fast</label> 
+ 	</div>
+ 		<div class="quiz-wrapper">
+	  <h3>1. What is the output of the below c code?</h3>
+	<br/>
+	    <input type="radio" id="Fastlearning" name="question4">
+	       <label for="Fastlearning">1. Fastlearning</label><br/>
+	    <input type="radio"  name="question4">
+	       <label>2. learning</label><br/>
+	    <input type="radio" name="question4">
+	       <label>3. learningFast</label> <br/>
+	    <input type="radio" name="question1">
+	     <label>4. Fast</label> 
+ 	</div>
+ 		<div class="quiz-wrapper">
+	  <h3>1. What is the output of the below c code?</h3>
+	<br/>
+	    <input type="radio" id="Fastlearning" name="question5">
+	       <label for="Fastlearning">1. Fastlearning</label><br/>
+	    <input type="radio"  name="question5">
+	       <label>2. learning</label><br/>
+	    <input type="radio" name="question5">
+	       <label>3. learningFast</label> <br/>
+	    <input type="radio" name="question5">
+	     <label>4. Fast</label> 
+ 	</div>
+ <style>
+ </style> -->
+</body>
+</html>
